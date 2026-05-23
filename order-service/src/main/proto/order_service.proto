@@ -1,0 +1,37 @@
+syntax = "proto3";
+package ufrn.aldcejam.grpc;
+import "google/protobuf/empty.proto";
+
+option java_multiple_files = true;
+option java_package = "ufrn.aldcejam.grpc";
+option java_outer_classname = "OrderProto";
+
+service order_service {
+  rpc createOrder (GrpcCreateOrderRequest) returns (GrpcCreateOrderResponse);
+  rpc getOrder (GrpcGetOrderRequest) returns (GrpcOrderResponse);
+  rpc listOrders (google.protobuf.Empty) returns (GrpcListOrdersResponse);
+}
+
+message GrpcListOrdersResponse {
+  repeated GrpcOrderResponse orders = 1;
+}
+
+message GrpcCreateOrderRequest {
+  string productId = 1;
+  int32 quantity = 2;
+}
+
+message GrpcCreateOrderResponse {
+  int32 id = 1;
+  string status = 2;
+}
+
+message GrpcGetOrderRequest {
+  int32 id = 1;
+}
+
+message GrpcOrderResponse {
+  int32 id = 1;
+  string productId = 2;
+  int32 quantity = 3;
+}

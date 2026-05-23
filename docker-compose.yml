@@ -1,0 +1,86 @@
+name: dist-system
+
+x-client-env: &client-env
+  GATEWAY_PROTOCOL: grpc
+  GATEWAY_PORT: 9000
+  GATEWAY_HOST: gateway
+
+services:
+  gateway:
+    image: aldcejam/prog-distr:gateway
+    build:
+      context: ./gateway
+    ports:
+      - "9000:9000"
+    container_name: gateway
+    environment:
+      <<: *client-env
+    networks:
+      - distributed-net
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 250M
+
+  calculadora-service:
+    image: aldcejam/prog-distr:calculadora-service
+    build:
+      context: ./calculadora-service
+    environment:
+      <<: *client-env
+      SERVICE_NAME: calculadora_service
+    depends_on:
+      - gateway
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 250M
+    networks:
+      - distributed-net
+
+  order-service:
+    image: aldcejam/prog-distr:order-service
+    build:
+      context: ./order-service
+    environment:
+      <<: *client-env
+      SERVICE_NAME: order_service
+    depends_on:
+      - gateway
+    deploy:
+      replicas: 2
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 250M
+    networks:
+      - distributed-net
+
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    command: -H unix:///var/run/docker.sock --admin-password "$$2b$$12$$jOYrhW6MttmdJWa/sGqRNe2ZjAEOCJNsnCUSSSd5fyk4hv4pe0EbK"
+    restart: always
+    ports:
+      - "9443:9443"
+      - "8000:8000"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    networks:
+      - distributed-net
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 250M
+
+networks:
+  distributed-net:
+    driver: bridge
+
+volumes:
+  portainer_data:

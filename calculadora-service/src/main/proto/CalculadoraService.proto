@@ -1,0 +1,21 @@
+syntax = "proto3";
+package ufrn.aldcejam.grpc;
+
+option java_multiple_files = true;
+option java_package = "ufrn.aldcejam.grpc";
+option java_outer_classname = "CalculadoraProto";
+
+service calculadora_service {
+  rpc squareMatrix (MatrixRequest) returns (MatrixResponse);
+}
+
+message MatrixRequest {
+  int32 rows = 1;
+  int32 cols = 2;
+}
+
+message MatrixResponse {
+  int32 rows = 1;
+  int32 cols = 2;
+  int64 time_taken_ms = 3;
+}

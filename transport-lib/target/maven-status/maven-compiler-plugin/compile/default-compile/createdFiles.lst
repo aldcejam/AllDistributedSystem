@@ -1,0 +1,5 @@
+br/ufrn/transport/core/Transport.class
+br/ufrn/transport/core/TransportFactory.class
+br/ufrn/transport/core/UDP.class
+br/ufrn/transport/core/TransportListener.class
+br/ufrn/transport/core/TCP.class
