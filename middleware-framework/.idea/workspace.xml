@@ -4,7 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f312f4d1-dbd2-47ea-998e-fafdf1012b79" name="Changes" comment="" />
+    <list default="true" id="f312f4d1-dbd2-47ea-998e-fafdf1012b79" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/LifecycleFactory$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculadora-service/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../calculadora-service/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../calculadora-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../calculadora-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/ufrn/middleware/lifecycle/PoolingLifecycleManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/ufrn/middleware/lifecycle/PoolingLifecycleManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/core/Broker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/core/Broker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/identification/Lookup.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/identification/Lookup.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/identification/RouteDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/identification/RouteDefinition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/LazyLifecycleManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/LazyLifecycleManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/Lifecycle.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/Lifecycle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/LifecycleFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/LifecycleFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/PerRequestLifecycleManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/PerRequestLifecycleManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/PoolingLifecycleManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/PoolingLifecycleManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/StaticLifecycleManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/lifecycle/StaticLifecycleManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/remoting/HttpMethod.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/remoting/HttpMethod.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/remoting/Invoker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/remoting/Invoker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/remoting/Marshaller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/remoting/Marshaller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/remoting/MiddlewareRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/remoting/MiddlewareRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/remoting/RemotingError.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/remoting/RemotingError.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/util/JsonMarshaller.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/br/ufrn/middleware/util/JsonMarshaller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/middleware-framework-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/middleware-framework-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transport-lib/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../transport-lib/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transport-lib/src/main/java/br/ufrn/transport/core/UDP.java" beforeDir="false" afterPath="$PROJECT_DIR$/../transport-lib/src/main/java/br/ufrn/transport/core/UDP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transport-lib/target/classes/br/ufrn/transport/core/TCP.class" beforeDir="false" afterPath="$PROJECT_DIR$/../transport-lib/target/classes/br/ufrn/transport/core/TCP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transport-lib/target/classes/br/ufrn/transport/core/Transport.class" beforeDir="false" afterPath="$PROJECT_DIR$/../transport-lib/target/classes/br/ufrn/transport/core/Transport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transport-lib/target/classes/br/ufrn/transport/core/TransportFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/../transport-lib/target/classes/br/ufrn/transport/core/TransportFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transport-lib/target/classes/br/ufrn/transport/core/UDP.class" beforeDir="false" afterPath="$PROJECT_DIR$/../transport-lib/target/classes/br/ufrn/transport/core/UDP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transport-lib/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transport-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../transport-lib/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../transport-lib/target/transport-lib-1.0-SNAPSHOT.jar" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +49,13 @@
       <entry key="_/home/apm/Documentos/projetos/prog-distribuida/1º unidade/AllDistributedSystem/middleware-framework" value="3DjEykuhEjnu8QHYuOb5PbD2UcE" />
     </persistenceIdMap>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2,
-  "fromUser": false
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3DjEykuhEjnu8QHYuOb5PbD2UcE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,8 +67,10 @@
     "Maven.middleware-framework [install].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/apm/Documentos/projetos/prog-distribuida/1º unidade/AllDistributedSystem/transport-lib",
     "node.js.detected.package.eslint": "true",
@@ -46,6 +85,14 @@
       <command value="mvn install" />
       <command value="mvn clean install" />
     </option>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">

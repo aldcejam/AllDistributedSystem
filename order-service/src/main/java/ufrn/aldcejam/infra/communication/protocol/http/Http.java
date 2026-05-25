@@ -24,7 +24,7 @@ public class Http implements TransportListener {
         this.transportType = transportType.toUpperCase();
         this.transport = TransportFactory.create(this.transportType);
         this.broker = new Broker();
-        this.broker.scan("ufrn.aldcejam.infra.controllers.http");
+        this.broker.scan();
     }
 
     public void start() {

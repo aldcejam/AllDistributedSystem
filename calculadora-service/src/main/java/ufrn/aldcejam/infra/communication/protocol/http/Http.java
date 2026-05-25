@@ -20,9 +20,7 @@ public class Http implements TransportListener {
     private final Transport transport;
     private final String transportType;
     private static final Broker broker = new Broker();
-    static {
-        broker.scan("ufrn.aldcejam.infra.controllers.http");
-    }
+    static {broker.scan();}
 
     public Http(String transportType) {
         this.transportType = transportType.toUpperCase();

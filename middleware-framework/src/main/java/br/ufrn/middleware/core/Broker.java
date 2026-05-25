@@ -27,8 +27,10 @@ public class Broker {
     private final Invoker invoker = new Invoker();
     private final Map<Class<?>, LifecycleManager> lifecycleManagers = new HashMap<>();
 
-    public void scan(String packageName) {
-        Reflections reflections = new Reflections(packageName);
+    public void scan() {
+        String callerClassName = Thread.currentThread().getStackTrace()[2].getClassName();
+        String rootPackage = callerClassName.contains(".") ? callerClassName.substring(0, callerClassName.indexOf('.')) : "";
+        Reflections reflections = new Reflections(rootPackage);
         Set<Class<?>> controllers = reflections.getTypesAnnotatedWith(Controller.class);
 
         for (Class<?> clazz : controllers) {

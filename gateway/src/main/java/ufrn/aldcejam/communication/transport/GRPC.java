@@ -12,7 +12,7 @@ import java.io.*;
 import java.util.concurrent.TimeUnit;
 
 public class GRPC extends Transport {
-    private static final int TIMEOUT_MS = 5000;
+    private static final int TIMEOUT_MS = 500;
     private Server server;
 
     private static final MethodDescriptor.Marshaller<byte[]> BYTE_MARSHALLER = new MethodDescriptor.Marshaller<>() {

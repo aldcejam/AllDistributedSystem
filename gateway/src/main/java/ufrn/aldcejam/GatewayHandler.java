@@ -25,7 +25,7 @@ public class GatewayHandler implements TransportListener {
     public GatewayHandler(ServiceRegistry registry) {
         this.registry = registry;
         GatewayController.setRegistry(registry);
-        broker.scan("ufrn.aldcejam");
+        broker.scan();
     }
 
     private record HttpRequestContext(

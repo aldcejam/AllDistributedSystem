@@ -22,9 +22,8 @@ public class OrderController {
     }
 
     @Post(path = "/")
-    public String create(@Body String body) {
+    public String create(@Body CreateOrderRequest request) {
         try {
-            CreateOrderRequest request = mapper.readValue(body, CreateOrderRequest.class);
             OrderResponse response = orderService.createOrder(request);
 
             if (response != null) {
